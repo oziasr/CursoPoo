@@ -13,7 +13,7 @@ namespace _13___Herencia
 
         public string Cargo
         {
-            get { return cargo ; }
+            get { return cargo; }
             set { cargo = value; }
         }
         public double Salario
@@ -31,7 +31,7 @@ namespace _13___Herencia
         public void EmpleadoMuestra()
         {
             Muestra();
-            Console.WriteLine("Es el actual {0} y ganaS {1} dólares mensuales",cargo,salario);
+            Console.WriteLine("Es el actual {0} y gana {1} dólares mensuales",cargo,salario);
         }
     }
 }

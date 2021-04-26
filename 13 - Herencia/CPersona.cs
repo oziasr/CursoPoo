@@ -35,7 +35,7 @@ namespace _13___Herencia
         }
         public void Muestra()
         {
-            Console.WriteLine("{0} tiene {1} años",nombre,edad);
+            Console.WriteLine($"{nombre} tiene {edad} años");
         }
     }
 
