@@ -33,9 +33,9 @@ namespace _13___Herencia
                 }
             }
         }
-        public void Muestra()
+        private void Muestra()
         {
-            Console.WriteLine($"{nombre} tiene {edad} añejos");
+            Console.WriteLine($"{nombre} tiene {edad} años");
         }
     }
 

@@ -19,11 +19,11 @@ namespace _13___Herencia
             CEmpleado dos = new CEmpleado(); // OPCIÓN 2
             Console.WriteLine("Dime el nombre del segundo empeado");
             string a = (Console.ReadLine());
-            Console.WriteLine("Dime la edad");
+            Console.WriteLine($"Dime la edad de {a}");
             int b = int.Parse(Console.ReadLine());
-            Console.WriteLine("Dime el cargo de {0}",a);
+            Console.WriteLine($"Dime el cargo de {a}");
             string c = (Console.ReadLine());
-            Console.WriteLine("Dime cuánto gana");
+            Console.WriteLine($"Dime cuánto gana {a}");
             double d =Convert.ToDouble(Console.ReadLine());
             dos.PonerDatos(a, b, c, d);
             Console.WriteLine("\n---------------------\n");
