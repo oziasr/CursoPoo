@@ -8,7 +8,8 @@ namespace _14___Constructor_en_herencia
 {
     class CPersona
     {
-        
+        private int edad;
+        private string nombre;
 
         public CPersona(string pNombre, int pEdad)
         {
@@ -16,9 +17,7 @@ namespace _14___Constructor_en_herencia
             nombre = pNombre;
             edad = pEdad;        
         }
-        private int edad;
-        private string nombre;
-
+      
         public string Nombre
         {
             get { return nombre; }
@@ -43,7 +42,7 @@ namespace _14___Constructor_en_herencia
         }
         public void Muestra()
         {
-            Console.WriteLine("{0} tiene {1} años",nombre,edad);
+            Console.WriteLine($"{nombre} tiene {edad} años");
         }
     }
 
