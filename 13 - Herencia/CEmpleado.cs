@@ -31,7 +31,7 @@ namespace _13___Herencia
         public void EmpleadoMuestra()
         {
             Muestra();
-            Console.WriteLine($"{Nombre} Es el actual {cargo}, tiene {Edad} años y gana {salario:n0} dólares mensuales");
+            Console.WriteLine($"Es el nuevo {cargo} y gana {salario:n0} dólares mensuales");
         }
     }
 }

@@ -10,9 +10,10 @@ namespace _13___Herencia
     {
         static void Main(string[] args)
         {
-            CEmpleado uno = new CEmpleado();  // OPCIÓN 1
-            uno.PonerDatos("Juan", 47, "Contador", 4000); 
-            uno.EmpleadoMuestra();
+            CPersona uno = new CPersona();  // OPCIÓN 1
+            uno.Nombre="Juan"; 
+            uno.Edad=40;
+            uno.Muestra();
 
             Console.WriteLine("\n---------------------\n");
 
