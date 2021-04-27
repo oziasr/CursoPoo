@@ -12,7 +12,7 @@ namespace _14___Constructor_en_herencia
         private double salario;
 
         public CEmpleado(string pNombre, int pEdad, string pCargo, double pSalario)
-            :base(pNombre,pEdad)
+            : base(pNombre, pEdad)
         {
             Console.WriteLine("Estamos en el constructor de empleado");
             cargo = pCargo;
@@ -39,7 +39,7 @@ namespace _14___Constructor_en_herencia
         public void EmpleadoMuestra()
         {
             Muestra();
-            Console.WriteLine($"Es el actual {cargo} y gana {salario} dólares mensuales");
+            Console.WriteLine($"Es el actual {cargo} y gana {salario:n0} dólares mensuales");
         }
     }
 }
