@@ -10,6 +10,7 @@ namespace _12___Métodos_estáticos
     {
         static void Main(string[] args)
         {
+            // CLASE CON MÉTODO NO ESTÁTICO
             double r;
             CCalculadora calcu1 = new CCalculadora(6, 3);
             calcu1.Suma();
@@ -24,8 +25,9 @@ namespace _12___Métodos_estáticos
             Console.WriteLine($"El resultado de la suma es {r}");
             r = CCalculadoraS.Resta(10, 5);
             Console.WriteLine($"El resultado de la resta es {r}");
-            Console.WriteLine($"");
-            // USAREMOS UN MÉTODO NO ESTÁTICO, ENTONCES DEBEMOS CREAR UNA INSTANCIA
+            Console.WriteLine("\n----------------------------------------\n");
+
+            // USAREMOS UN MÉTODO ESTÁTICO, CREANDO UNA INSTANCIA
             CCalculadoraS miS = new CCalculadoraS();
             miS.Saludo();
             //miS.Suma();// DA ERROR PORQUE EL MÉTODO ESTÁTICO SÓLO SE PUEDE USAR DIRECTAMENTE SIN INSTANCIAR

@@ -22,7 +22,7 @@ namespace _11___Atributos_estáticos
             double c = double.Parse(Console.ReadLine());
             CCompu compu4 = new CCompu(a, b, c);
             Console.WriteLine("Dime la tasa de cambio del día");
-            compu1.TipoCambio = double.Parse(Console.ReadLine());
+            compu1.TipoCambio = double.Parse(Console.ReadLine());// ESTE VALOR VALDRÁ PARA TODOS PORQUE ES ESTÁTICO
             compu1.Muestra();
             Console.WriteLine("--------------------------------------------------");
             compu2.Muestra();

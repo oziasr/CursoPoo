@@ -18,7 +18,7 @@ namespace _12___Métodos_estáticos
         }
         public void Saludo()
         {
-            Console.WriteLine($"Hola desde el método NO estático");
+            Console.WriteLine($"Hola desde el método estático");
         }
     }
 }

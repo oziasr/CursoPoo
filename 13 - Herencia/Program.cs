@@ -39,7 +39,6 @@ namespace _13___Herencia
             tres.Salario = 2500;
             tres.EmpleadoMuestra();
 
-
             Console.ReadKey();
         }
     }
