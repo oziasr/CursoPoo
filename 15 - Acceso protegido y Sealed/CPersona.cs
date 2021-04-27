@@ -8,8 +8,6 @@ namespace _15___Acceso_protegido_y_Sealed
 {
     class CPersona
     {
-        
-
         public CPersona(string pNombre, int pEdad)
         {
             Console.WriteLine("Estamos en el constructor de persona");

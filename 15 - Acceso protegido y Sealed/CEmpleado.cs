@@ -31,17 +31,17 @@ namespace _15___Acceso_protegido_y_Sealed
         }
         public void PonerDatos(string pNombre, int pEdad, string pCargo, double pSalario)
         {
-            //Nombre = pNombre;
+            //Nombre = pNombre; // ESTAS SON LAS PROPIEDADES Nombre y Edad CON MAYÚSCULAS
             //Edad = pEdad;
             nombre = pNombre;// AQUÍ YA PODEMOS USAR DIRECTAMENTE EL ATRIBUTO 
             edad = pEdad;
             cargo = pCargo;
-            salario = pSalario;
+            salario = pSalario; 
         }
         public void EmpleadoMuestra()
         {
             Muestra();
-            Console.WriteLine("Es el actual {0} y gana {1} dólares mensuales",cargo,salario);
+            Console.WriteLine($"Es el actual {cargo} y gana {salario:n0} dólares mensuales");
         }
     }
 }

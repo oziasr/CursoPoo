@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace _15___Acceso_protegido_y_Sealed
 {
-    class CBecario : CPersona
+    class CBecario : CPersona // NO PUEDE DESCENDER DE LA CLASE CEmpleado PORQUE ESTÁ SELLADA "sealed"
     {
         private int horasBeca;
+
         public CBecario(string pNombre, int pEdad, int pHoras)
             :base(pNombre, pEdad)
          {
