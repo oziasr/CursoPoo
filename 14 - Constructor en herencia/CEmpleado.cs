@@ -18,7 +18,6 @@ namespace _14___Constructor_en_herencia
             cargo = pCargo;
             salario = pSalario;
         }
-
         public string Cargo
         {
             get { return cargo; }

@@ -37,8 +37,6 @@ namespace _14___Constructor_en_herencia
             tres.PonerDatos("Pedro", 25, "Portero", 2500);
             tres.EmpleadoMuestra();
 
-
-
             Console.ReadKey();
         }
 
