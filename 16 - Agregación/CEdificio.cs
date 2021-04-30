@@ -21,7 +21,7 @@ namespace _16___Agregación
         }// MÉTODO MUESTRA
         public void Muestra()
         {
-            Console.Write("el edificio de {0} con {1} apartamentos rentados y {2} disponibles",direccion,ApartamentosRentados,CantidadApartamentos-ApartamentosRentados);
+            Console.Write($"el edificio de {direccion} con {ApartamentosRentados} apartamentos rentados y {CantidadApartamentos-ApartamentosRentados} disponibles\r\n");
         }
     }
 }
