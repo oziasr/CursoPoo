@@ -9,7 +9,7 @@ namespace _16___Agregación
     class CPropietario
     {
         private string nombre;
-        private CEdificio propiedad = null;// ** OJO ** NO ES UNA INSTANCIA DE CEdificio  
+        private CEdificio propiedad = null;// ** OJO ** NO ES UNA INSTANCIA DE CEdificio, ES UN CAMPO DE CLASE DE TIPO CEdificio  
 
         public CPropietario(string pNombre)
         {

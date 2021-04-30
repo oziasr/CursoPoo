@@ -17,7 +17,7 @@ namespace _03_Acceso_público_y_privado
             calcu1.a = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Dame el segundo número");
             calcu1.b = Convert.ToDouble(Console.ReadLine());
-            //Console.WriteLine(calcu1.r);// NO SE PUEDE
+            //Console.WriteLine(calcu1.r);// NO SE PUEDE PORQUE ES PRIVADO, SÓLO SE ACCEDE POR MÉTODOS O PROPIEDEDES
             calcu1.Suma();
             calcu1.Muestra();
 

@@ -20,9 +20,8 @@ namespace _1_Declaración_de_Clases
             calcu1.Suma();
             calcu1.Muestra();
 
-            Console.WriteLine("");
-            Console.WriteLine("---------------------------"); /// SEPARADOR
-            Console.WriteLine("");
+            Console.WriteLine("\n---------------------------\n"); /// SEPARADOR
+            
             // CREAMOS OTRA INSTANCIA
             CCalculadora calcu2 = new CCalculadora();
             // PEDIMOS LOS DATOS PARA ACCEDER A LOS ATRIBUTOS

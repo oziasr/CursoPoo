@@ -20,7 +20,7 @@ namespace _03_Acceso_público_y_privado
         }
         public void Muestra()// ESTE MÉTODO SÓLO MUESTRA RESULTADOS
         {
-            Console.WriteLine("El Resultado de sumar {0} más {1} es {2}", a, b, r);
+            Console.WriteLine($"El Resultado de sumar {a} más {b} es {r}");
         }
     }
 }

@@ -13,14 +13,14 @@ namespace _2_Ámbito
             // ESTA VARIABLE SÓLO ES VISIBLE DENTRO DE ESTE MÉTODO MAIN
             int a = 5;
             a = a * 5;
-            Console.WriteLine("El valor de la variable a del método Main es: {0}", a);
-            // TRATAMOS DE USAR UNA VARIABLE DE LA CLASE "CMiClase" Y NOS DA ERROR
+            Console.WriteLine($"El valor de la variable 'a' del método Main es: {a}");
+            // TRATAMOS DE USAR UNA VARIABLE DE LA CLASE "CMiClase" Y NOS DA ERROR PORQUE ES PRIVATED
             //b = 10;// nos marca error
 
             // PROCEDEMOS A INSTANCIAR
             CMiClase objeto = new CMiClase();
-            objeto.Multiplicador();
             objeto.Muestra();
+            objeto.Multiplicador();
             Console.ReadKey();
         }
     }

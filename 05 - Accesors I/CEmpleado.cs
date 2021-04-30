@@ -10,11 +10,13 @@ namespace _05___Accesors_I
     {
         private double impuesto;
         private double sueldo;
-        //private double imp;
+        private double impt;
 
-        public void Muestra()
+        public void Muestra(double Psueldo, int Pimpt)
         {
-            Console.WriteLine($"El sueldo base es de {sueldo:n0} y el impuesto es de {impuesto/100:n0}%");
+            sueldo = Psueldo;
+            impt = Pimpt;
+            Console.WriteLine($"El sueldo base es de {sueldo:n0} dólares y el impuesto es de {impt:n0}%");
         }
         public void Muestra2()
         {
@@ -30,7 +32,7 @@ namespace _05___Accesors_I
             return sueldo;
         }
         // MUTATOR
-        public double CalculaImpuesto(double pSueldo,double pImpuesto)
+        public double CalculaImpuesto(double pSueldo,int pImpuesto)
         {
             //imp = pImpuesto;
             impuesto = (pSueldo)*(pImpuesto*0.01);

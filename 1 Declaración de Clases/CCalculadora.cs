@@ -8,19 +8,19 @@ namespace _1_Declaración_de_Clases
 {
     class CCalculadora
     {
-        // DECLARAMOS LOS ATRIBUTOS
+        // DECLARAMOS LOS ATRIBUTOS ( POR AHORA PÚBLICOS, PERO DEBERN SER PRIVADOS )
         public double a;
         public double b;
-        public double r;
+        private double r;
 
         // DECLARAMOS LOS MÉTODOS
-        public void Suma()// ESTE MÉTODO REALIZA UNA ACCIÓN
+        public void Suma()// ESTE MÉTODO REALIZA UNA ACCIÓN, PERO POR SER VOID NO DEVUELVE NADA
         {
             r = a + b;
         }
-        public void Muestra()// ESTE MÉTODO SÓLO MUESTRA RESULTADOS
+        public void Muestra()// ESTE MÉTODO SÓLO MUESTRA RESULTADOS ( OJO, NO DEVUELVE NADA, SÓLO IMPRIME ALGO )
         {
-            Console.WriteLine("El Resultado de sumar {0} más {1} es {2}", a, b, r);
+            Console.WriteLine($"El Resultado de sumar {a} más {b} es {r}");
         }
 
     }

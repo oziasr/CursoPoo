@@ -17,11 +17,11 @@ namespace _1_Declaración_de_Clases
         public void Suma()// ESTE MÉTODO REALIZA UNA ACCIÓN
         {
             r = a + b;
-            Muestra();// INVOCACIÓN
+            Muestra();// INVOCACIÓN AL MÉTODO PRIVADO
         }
-        private void Muestra()// ESTE MÉTODO SÓLO MUESTRA RESULTADOS
+        private void Muestra()// ESTE MÉTODO SÓLO SE PUEDE INVOCAR DESDE ESTA CLASE
         {
-            Console.WriteLine("El Resultado de sumar {0} más {1} es: {2}", a, b, r);
+            Console.WriteLine($"El Resultado de sumar {a} más {b} es: {r}");
         }
 
     }
