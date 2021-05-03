@@ -13,7 +13,7 @@ namespace _06c
            
 
             CEmpleado Juan = new CEmpleado();
-            Console.WriteLine($"Dime el sueldo de ");
+            Console.WriteLine($"Dime el sueldo de Juan");
             Juan.SetSueldo(Convert.ToInt32(Console.ReadLine()));
             Juan.GetSueldo();
             Juan.CalculaImpuesto();

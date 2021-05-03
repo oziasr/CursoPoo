@@ -16,7 +16,7 @@ namespace ConsoleApp1
             Console.WriteLine($"El monto a pagar es de {sueldo-impuesto:n0}");
         }
         // MÉTODO GETTER Y SETTER EN UNO SOLO ( NO RECOMENDADO, PERO FUNCIONA )
-        public double Sueldo
+        public double Sueldo// LAS PROPIEDADES NO LLEVAN PARÉNTESIS
         {
             get
             {

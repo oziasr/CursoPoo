@@ -18,20 +18,20 @@ namespace _09___El_constructor
             nombre = Console.ReadLine();
             Console.WriteLine("Dime la edad");
             edad = int.Parse(Console.ReadLine());
-            //nombre = "";
-            //edad = 0;
         }
-        public string Nombre
-        {
-            set { nombre = value; }
-        }
-        public int Edad
-        {
-            set { edad = value; }
-        }
+
         public void Muestra()
         {
             Console.WriteLine($"Hola {nombre}, el próximo año tendrás {edad+1} años");
         }
+
+        //public string Nombre
+        //{
+        //    set { nombre = value; }
+        //}
+        //public int Edad
+        //{
+        //    set { edad = value; }
+        //}
     }
 }

@@ -22,7 +22,7 @@ namespace _06___Accesors_II
         {
             while (pSueldo < 5000 || pSueldo > 15000)
             {
-                LogError("Sueldo incorrecto " + pSueldo.ToString());
+                LogError("Sueldo incorrecto " + pSueldo.ToString("N0")); // AQUÍ LE DAMOS FORMATO NUMÉRICO A ToString
                 Console.WriteLine($"Sueldo incorrecto, debe estar entre 5.000 y 15.000 dólares");
                 Console.WriteLine($"Intente nuevamente");
                 pSueldo = Convert.ToDouble(Console.ReadLine());              
@@ -38,7 +38,8 @@ namespace _06___Accesors_II
         public double Get_sueldo(int pPassword)// GETTER
         {
             if (pPassword != 1234)
-            {
+            {   
+
                 LogError("Password incorrecto " + pPassword.ToString());
                 return 0.0;
             }
@@ -49,22 +50,17 @@ namespace _06___Accesors_II
         {
             while (pPassword != 1234) 
             {
-                          
-                //if (pPassword != 1234)
-                //{
-                    LogError("Password incorrecto " + pPassword.ToString());
-                    Console.WriteLine("Password inválido");
-                    Console.WriteLine("intente nuevamente");
-                    pPassword = (Convert.ToInt32(Console.ReadLine()));
-                //}
-                
+                LogError("Password incorrecto " + pPassword.ToString());
+                Console.WriteLine("Password inválido");
+                Console.WriteLine("intente nuevamente");
+                pPassword = (Convert.ToInt32(Console.ReadLine()));                
             }
             return impuesto;
         }
         // MUTATOR
         public void CalculaImpuesto()
         {
-            impuesto = sueldo * 0.16;
+            impuesto = sueldo * 0.15;
         }
 
         public void MuestraLog()

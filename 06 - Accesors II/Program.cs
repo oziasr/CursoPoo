@@ -12,7 +12,7 @@ namespace _06___Accesors_II
         {
             CEmpleado juan = new CEmpleado();
             Console.WriteLine("Dime el sueldo base de Juan");           
-            juan.Set_sueldo(Convert.ToDouble(Console.ReadLine()));
+            juan.Set_sueldo(Convert.ToDouble(Console.ReadLine()));// A DIFERENCIA DEL EJERCICIO 05 AQUÍ NO USAMOS VARIBLES
             Console.WriteLine("Dime la clave para calcular el impuesto");
             juan.Get_impuesto(Convert.ToInt32(Console.ReadLine()));
             juan.CalculaImpuesto();
@@ -23,7 +23,7 @@ namespace _06___Accesors_II
             Console.WriteLine("\n---------------\n");
 
             CEmpleado jose = new CEmpleado();
-            Console.WriteLine("Dime el sueldo base de jose ");
+            Console.WriteLine("Dime el sueldo base de José ");
             jose.Set_sueldo(Convert.ToDouble(Console.ReadLine()));
             Console.WriteLine("Dime la clave para calcular el impuesto");
             jose.Get_impuesto(Convert.ToInt32(Console.ReadLine()));

@@ -39,10 +39,10 @@ namespace _10___Sobrecarga_de_constructor__destructor
         }
         ~CPersona()// ÉSTE ES EL DESTRUCTOR
         {
-            Console.WriteLine($"Adiós desde {nombre}");
+            Console.WriteLine($"Adiós desde el Destructor");
             nombre  = "";
             edad = 0;
-            Console.WriteLine($"El nombre es {nombre} y tiene {edad} años");
+            Console.WriteLine($"El nombre es {nombre} y la edad {edad}");
             Console.ReadKey();
         }
 

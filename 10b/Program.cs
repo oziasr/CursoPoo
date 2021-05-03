@@ -11,9 +11,15 @@ namespace _10b
         static void Main(string[] args)
         {
             CPersona persona1 = new CPersona();
-            CPersona persona2 = new CPersona("José", 25901586, 23);
             persona1.Muestra();
+            Console.WriteLine("\n==================\n");
+            CPersona persona2 = new CPersona("José", 25901586, 23);
             persona2.Muestra();
+            Console.WriteLine("\n==================\n");
+            CPersona persona3 = new CPersona("Michelle");
+            persona3.Cedula = 27246768;
+            persona3.Edad = 20;
+            persona3.Muestra();
             Console.ReadKey();
         }
     }

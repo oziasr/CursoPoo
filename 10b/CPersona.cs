@@ -29,6 +29,13 @@ namespace _10b
             cedula = Pcedula;
             edad = Pedad;
         }
+        public CPersona(string Pnombre)
+        {
+            Console.WriteLine("Estamos en el constructor sobrerecargado 2");
+            nombre = Pnombre;
+        }
+
+        // PROPIEDADES
         public string Nombre
         {
             set { nombre = value; }
