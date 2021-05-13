@@ -10,8 +10,8 @@ namespace _12___Métodos_estáticos
     {
         static void Main(string[] args)
         {
-            // CLASE CON MÉTODO NO ESTÁTICO
             double r;
+            // CLASE CON MÉTODO NO ESTÁTICO
             CCalculadora calcu1 = new CCalculadora(6, 3);
             calcu1.Suma();
             Console.WriteLine($"El resultado de la suma es {calcu1.R}");

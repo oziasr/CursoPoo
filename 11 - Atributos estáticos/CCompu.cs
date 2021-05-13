@@ -26,7 +26,7 @@ namespace _11___Atributos_estáticos
             memoria = pMemoria;
             costo = pCosto;
         }
-        public double TipoCambio
+        public double TipoCambio // ESTO ES UNA PROPIEDAD
         {
             set { tipoCambio = value; }
         }
