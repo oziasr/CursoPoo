@@ -27,7 +27,7 @@ namespace _12___Métodos_estáticos
             Console.WriteLine($"El resultado de la resta es {r}");
             Console.WriteLine("\n----------------------------------------\n");
 
-            // USAREMOS UN MÉTODO ESTÁTICO, CREANDO UNA INSTANCIA
+            // USAREMOS UN MÉTODO ESTÁTICO, CREANDO UNA INSTANCIA 
             CCalculadoraS miS = new CCalculadoraS();
             miS.Saludo();
             //miS.Suma();// DA ERROR PORQUE EL MÉTODO ESTÁTICO SÓLO SE PUEDE USAR DIRECTAMENTE SIN INSTANCIAR
