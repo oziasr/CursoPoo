@@ -23,10 +23,9 @@ namespace _19___Uso_de_new_en_métodos
             miProducto_2.MuestraPrecio();
             Console.WriteLine($"---------");
 
-            CProducto miproducto_3 = new CProductoImportado("Nevera",50000, 0.2);
+            CProducto miproducto_3 = new CProductoImportado("Nevera",50000, 0.2); // ojo
             miproducto_3.CalculaPrecio();
             miproducto_3.MuestraPrecio();
-            Console.WriteLine($"---------");
             Console.ReadKey();
 
         }

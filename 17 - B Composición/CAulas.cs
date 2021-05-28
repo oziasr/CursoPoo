@@ -9,8 +9,7 @@ namespace _17___B_Composición
     class CAulas
     {
         private string nombreAula;
-        private int cantidadAlumnos;
-        
+        private int cantidadAlumnos;        
 
         public CAulas (string pNombre, int pCantidad)
         {
@@ -19,10 +18,9 @@ namespace _17___B_Composición
         }
         public override string ToString()
         {
-            string mensaje = string.Format("El aula {0} con {1} alumnos", nombreAula, cantidadAlumnos);
+            string mensaje = string.Format($"Un aula de {nombreAula} con capacidad para {cantidadAlumnos} alumnos");
             return mensaje;
-        }
-        
+        }   
 
     }
 }

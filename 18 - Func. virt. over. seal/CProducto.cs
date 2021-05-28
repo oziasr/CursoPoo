@@ -18,14 +18,14 @@ namespace _18___Func.virt.over.seal
             precioCompra = pPrecioCompra;
             precioVenta = 0;
         }
-        public virtual void CalculaPrecio()
+        public virtual void CalculaPrecio() // MÉTODO VIRTUAL ES PARA QUE LAS CLASES HIJAS PUEDAN HACER OVERRIDE
         {
             Console.WriteLine("Calcula precio de producto");
             precioVenta = precioCompra * 1.3;
         }
         public void MuestraVenta()
         {
-            Console.WriteLine($"El precio de {descripcion} es de {precioVenta}");
+            Console.WriteLine($"El precio de {descripcion} es de {precioVenta:N0}");
         }
     }
 }

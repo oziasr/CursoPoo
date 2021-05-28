@@ -25,6 +25,6 @@ namespace _20___Abstract
             precioVenta = precioCompra * 1.3;
         }
 
-        public abstract void MuestraVenta();
+        public abstract void MuestraVenta(); // OBLICA A LAS CLASES HIJAS A IMPLEMENTARLO 
     }
 }

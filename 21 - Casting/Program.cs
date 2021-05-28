@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,15 +20,20 @@ namespace _21___Casting
             // P1.Mensaje();
             ((CProductoImportado)P1).mensaje();// TYPE CAST
 
+            //TYPE CAST VA DE LO MÁS ESPECÍFICO A LO MÁS GENERAL: OBJEC>PRODUCTO>PRODUCTOIMPORTADO>PRODUCTODETENIDO
+            //UN PRUDUCTO IMPORTADO ES UN PRODUCTO, PERO UN PRUDUCTO NO NECESARIAMENTE ES UN PRODUCTO IMPORTADO
+
             Console.WriteLine("----------------"); 
             // CProducto es un Object                                  OBJECT
             object P2 = new CProducto("Radio",2000);
-            ((CProducto)P2).CalculaPrecio();// TYPE CAST
-            Console.WriteLine(((CProducto)P2));// TYPE CAST  
-
-            Console.WriteLine("-----------------");
             // Object no es un CProducto
             // CProducto P3 = new Object(); // NO SE PUEDE
+            //P2.CalculaPrecio(); // NO SE PUEDE, SE DEBE HACER UN TYPE CAST
+            ((CProducto)P2).CalculaPrecio();// TYPE CAST. ASÍ SÍ
+            Console.WriteLine(((CProducto)P2));// TYPE CAST  
+
+            Console.WriteLine("-------------------");
+            
 
             Console.WriteLine("----- DETECTA------");
             CProducto p4 = new CProducto("Balón", 100);
@@ -48,7 +53,7 @@ namespace _21___Casting
             Console.WriteLine(a);
 
             double y = b;
-            Console.WriteLine(b);
+            Console.WriteLine(y);
             // DE UN TIPO MAYOR A UNO MENOR
             // b=c;
             b = (float)c;

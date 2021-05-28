@@ -12,20 +12,18 @@ namespace _17___B_Composición
         {
             string nombreEscuela = "";
             int numerodeAulas = 0;
-            
+
             //CREAMOS LA ESCUELA
             Console.WriteLine("Dime el nombre de la escuela");
             nombreEscuela = Console.ReadLine();
-            Console.Write("Cuántas aulas tiene ?");
+            Console.WriteLine("Cuántas aulas tiene ?");
             numerodeAulas = Convert.ToInt32(Console.ReadLine());
-            //CAulas[] aulas2 = new CAulas[numerodeAulas];
-            
-            CEscuela uno = new CEscuela(nombreEscuela,numerodeAulas);
+            CEscuela miEscuela = new CEscuela(nombreEscuela,numerodeAulas);
             // CREAMOS LOS OBJETOS AULAS
-            uno.ColocaAulas();
-            Console.WriteLine(uno);
+            miEscuela.ColocaAulas();
+            Console.WriteLine(miEscuela);
+            miEscuela = null; // AL ELIMINAR ESTA INSTANCIA SE ELIMINAN LAS AULAS CREADAS TAMBIÉN
             Console.ReadKey();
-
         }
     }
 }

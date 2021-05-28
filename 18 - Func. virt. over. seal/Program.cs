@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,7 +15,7 @@ namespace _18___Func.virt.over.seal
             CProducto uno = new CProducto("Bicicleta", 20000);
             uno.CalculaPrecio();
             uno.MuestraVenta();
-            Console.WriteLine("-------------");
+            Console.WriteLine("-----------------");
 
             // CREAMOS UN PRODUCTO_IMPORTADO
             CProductoImportado dos = new CProductoImportado("Carrito", 20000, 0.15);
@@ -24,8 +24,7 @@ namespace _18___Func.virt.over.seal
             Console.WriteLine("-----------------");
 
             // CREAMOS UN PRODUCTO DETENIDO
-            CProductoDetenido tres = new CProductoDetenido("Casita", 20000
-                ,0.15, 500);
+            CProductoDetenido tres = new CProductoDetenido("Casita", 20000, 0.15, 500);
             tres.CalculaPrecio();
             tres.MuestraVenta();
 
