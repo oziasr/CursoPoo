@@ -10,7 +10,7 @@ namespace _22___Polimorfismo
     {
         public override void Moverse()
         {
-            Console.WriteLine($"La culebre {nombre} se arrastra");
+            Console.WriteLine($"La culebra {nombre} se arrastra");
         }
     }
     

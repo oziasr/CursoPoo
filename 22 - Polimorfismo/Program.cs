@@ -40,15 +40,16 @@ namespace _22___Polimorfismo
             Console.WriteLine("4- Culebra");
             opcion = Convert.ToInt16(Console.ReadLine());
             CAnimal Mimascota = new CAnimal();
-            if (opcion==1)
-            { Mimascota = new CPerro(); }
-            if (opcion == 2)
-            { Mimascota = new CAve(); }
-            if (opcion == 3)
-            { Mimascota = new CPez(); }
-            if (opcion == 4)
-            { Mimascota = new CCulebra(); }
-            Console.WriteLine("Dime el de la mascota");
+
+            if (opcion==1)  Mimascota = new CPerro(); 
+
+            if (opcion == 2)  Mimascota = new CAve(); 
+
+            if (opcion == 3)  Mimascota = new CPez(); 
+
+            if (opcion == 4)  Mimascota = new CCulebra(); 
+
+            Console.WriteLine("Dime el nombre de la mascota");
             Mimascota.Nombre = Console.ReadLine();
             Mimascota.Moverse();
             Console.ReadKey();
